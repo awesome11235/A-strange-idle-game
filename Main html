@@ -1,0 +1,82 @@
+<html>
+  <head>
+	<!--Because it is-->
+	<title>An Awesome Game</title>
+	
+	<!--jquery-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!--CSS-->
+	<link rel="stylesheet" type="text/CSS" href="game.css">
+	
+	<!--Viewport width-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  
+  <body>
+	<!--==Displayed Stats==-->
+	<!--This is self-explainitory. -->
+	<p id="money" class="money"></p>
+	<!--Goes below money, is also important-->
+	<p id="dps" class="dps"></p>
+	<!--Not quite sure how to do this yet-->
+	<p id="clickStr" class="dps">Click strength: 1</p>
+	
+	
+	
+	
+	<!--=BUTTONS FOR BUYING THINGS=-->
+	<!--Button for the user to click and gain money-->
+	<button onmouseover="clickOver()" onmouseleave="clickOverStop()" onclick = "clickEarn(clickLevel)" class="clickMe" id="moneyEarn" style="font-size: 15px;">༼⩺ω⩹༽</button>
+	<hr>
+	
+	<!--Buy Option 1-->
+	<button onclick = "upgradeClick()" class="clickingStuff" id="buy1">Multiply click strength by 2 (100 gold)</button>
+	<hr>
+	
+	<!--==IDLE BUYING OPTIONS==-->
+	<!--Idle Buy Option 1-->
+	<button onclick = "iBuy1()" class="heroName" id="iBuy1">Kid<span class="tooltiptext">You grap one of your friends and hire them to help kill some monsters. </span></button>
+	<p class="heroCost" id="iBuy1cost">+1dps (25 gold)</p>
+	<!--Displays a box for every time it's bought-->
+	<div class="heroCount" id="heroCount">
+	</div>
+	
+	
+	<!--Idle Buy Option 2-->
+	<button onclick = "iBuy2()" class="heroName" id="iBuy2">Lumberjack<span class="tooltiptext">I'm not even going to ask where he got an axe that big... </span></button>
+	<p class="heroCost" id="iBuy2cost">+5dps (200 gold)</p>
+	<!--Displays a box for every time it's bought-->
+	<div class="heroCount2" id="heroCount2">
+	</div>
+	
+	<!--Idle Buy Option 3-->
+	<button onclick = "iBuy3()" class="heroName" id="iBuy3">Dinosaur<span class="tooltiptext">Should I be worried about a ginormous ramaging T-Rex? Nope.</span></button>
+	<p class="heroCost" id="iBuy3cost">+15dps (1000 gold)</p>
+	<!--Displays a box for every time it's bought-->
+	<div class="heroCount3" id="heroCoun3">
+	</div>
+	
+	<!--Idle Buy Option 4-->
+	<button onclick = "iBuy4()" class="heroName" id="iBuy4">Soldier<span class="tooltiptext">Long-range attacks should prevent any more from being infected. </span></button>
+	<p class="heroCost" id="iBuy4cost">+50dps (10000 gold)</p>
+	<div class="heroCount4" id="heroCoun4">
+	</div>
+	
+	<!--Idle Buy Option 5-->
+	<button onclick = "iBuy5()" class="heroName" id="iBuy5">Tank<span class="tooltiptext">Now we're talking!</span></button>
+	<p class="heroCost" id="iBuy5cost">+100dps (100000 gold)</p>
+	<div class="heroCount5" id="heroCoun5">
+	</div>
+	
+	<!--Idle Buy Option 6-->
+	<button onclick = "iBuy6()" class="heroName" id="iBuy6">Ninja<span class="tooltiptext">Invisible   （ -.-）ノ-=≡≡卍</span></button>
+	<p class="heroCost" id="iBuy6cost">+500dps (1000000 gold)</p>
+	<div class="heroCount6" id="heroCoun6">
+	</div>
+	
+	
+	
+	<!--Javascript-->
+	<script src="game.js"></script>
+  </body>
+</html>
