@@ -1,0 +1,260 @@
+body {
+  background-color: #3f2a8c;
+}
+
+
+
+
+/*  The top bar with red text, displays current $  */
+.money {
+  background-color: #000a54;
+  box-shadow: 5px 5px 5px black;
+  margin-left: 250px;
+  color: red;
+  border-style: outset;
+  border-width: 5px;
+  border-color: #000a54;
+  height: 30px;
+  display: block;
+}
+.money:hover {
+  font-size: 30px;
+}
+.dps {
+  background-color: #000a54;
+  box-shadow: 3px 3px 5px black;
+  margin-left: 280px;
+  color: maroon;
+  border-style: outset;
+  border-width: 3px;
+  border-color: #000a54;
+  height: 25px;
+  display: block;
+}
+.dps:hover {
+  color: red;
+}
+
+
+
+
+.clickMe {
+  font-size: 500px;
+  background-color: #fae100;
+  padding: 20px;
+  font: impact;
+  margin-left: 200px;
+  display: block;
+  font-weight: bold;
+}
+.clickMe:hover {
+  background-color: red;
+  border-color: red;
+  font-weight: 900;
+}
+.clickMe:not(:hover) {
+  font-weight: 600;
+}
+
+.clickMe:active{
+  color: white;
+  background-color: black;
+  border-color: black;
+}
+
+.clickingStuff {
+  color: #0b0030;
+  background-color: #e8c715;
+  border-color: #e8c715
+  margin-left: 50px;
+}
+
+
+
+.heroName {
+  background-color: gold;
+  box-shadow: 3px 3px 3px #31216e;
+  margin: 0px;
+  padding-left: 20px;
+  padding-top: 10px;
+  opacity: 0.9;
+  border-color: #cd7f32;
+  border-style: outset;
+  border-width: 5px;
+  width: 200px;
+  font-size: 20px;
+  position: relative;
+  display: inline-block;
+}
+.heroCost {
+  background-color: gold;
+  box-shadow: 2px 2px 2px #31216e;
+  color: maroon;
+  margin: 2px;
+  padding-left: 15px;
+  opacity: 0.8;
+  border-color: #cd7f32;
+  border-style: outset;
+  border-width: 3px;
+  width: 140px;
+}
+
+
+.heroNumber {
+  background-color: green;
+  color: green;
+  margin: 2px;
+  padding-left: 15px;
+  opacity: 0.8;
+  border-color: green;
+  border-style: outset;
+  border-width: 5px;
+  width: 5px;
+  height: 5px;
+  display: inline-block;
+}
+.heroCount {
+  margin: 3px;
+}
+
+
+.heroNumber2 {
+  background-color: yellowgreen;
+  color: yellowgreen;
+  margin: 2px;
+  padding-left: 15px;
+  opacity: 0.8;
+  border-color: yellowgreen;
+  border-style: outset;
+  border-width: 5px;
+  width: 5px;
+  height: 5px;
+  display: inline-block;
+}
+.heroCount2 {
+  margin: 3px;
+}
+
+.heroNumber3 {
+  background-color: yellow;
+  color: yellow;
+  margin: 2px;
+  padding-left: 15px;
+  opacity: 0.8;
+  border-color: yellow;
+  border-style: outset;
+  border-width: 5px;
+  width: 5px;
+  height: 5px;
+  display: inline-block;
+}
+.heroCount3 {
+  margin: 3px;
+}
+
+
+
+.heroNumber4 {
+  background-color: orange;
+  color: orange;
+  margin: 2px;
+  padding-left: 15px;
+  opacity: 0.8;
+  border-color: orange;
+  border-style: outset;
+  border-width: 5px;
+  width: 5px;
+  height: 5px;
+  display: inline-block;
+}
+.heroCount4 {
+  margin: 3px;
+}
+
+.heroNumber5 {
+  background-color: red;
+  color: red;
+  margin: 2px;
+  padding-left: 15px;
+  opacity: 0.8;
+  border-color: red;
+  border-style: outset;
+  border-width: 5px;
+  width: 5px;
+  height: 5px;
+  display: inline-block;
+}
+.heroCount5 {
+  margin: 3px;
+}
+
+
+.heroNumber6 {
+  background-color: #ab0000;
+  color: #ab0000;
+  margin: 2px;
+  padding-left: 15px;
+  opacity: 0.8;
+  border-color: #ab0000;
+  border-style: outset;
+  border-width: 5px;
+  width: 5px;
+  height: 5px;
+  display: inline-block;
+}
+.heroCount6 {
+  margin: 3px;
+}
+
+
+
+
+/*  For smaller screens  */
+@media (max-width: 800px){
+  .heroCost {
+	width: 90px;
+  }
+  .heroName {
+	width: 120px;
+	padding-left: 10px;
+  }
+}
+/*  For bigger screens  8   */
+@media (min-width: 1000px) {
+  .clickMe {
+	margin-left: 400px;
+	font-size: 800px;
+  }
+}
+
+
+
+          /**//*  TOOLTIP CODE  *//**/
+/* Tooltip container */
+
+
+/* Tooltip text */
+.heroName .tooltiptext {
+  visibility: hidden;
+  width: 150px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  opacity: 0;
+  transition: opacity 1s;
+  font-size: 13px;
+ 
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  left: 105%;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.heroName:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
