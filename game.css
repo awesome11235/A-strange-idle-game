@@ -1,9 +1,25 @@
+
+
 body {
   background-color: #3f2a8c;
+  background-image: url('https://tinyurl.com/b8rjbc69');
+  background-size: cover;
 }
-
-
-
+/*
+#topBar {
+  position:absolute;
+	left:0px;
+	top:0px;
+	width:100%;
+	height:32px;
+	background:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQx9CNngpFidrCUvSNZsqpz5JGAXTnai_tQv-rqJIW5KNzc540fCb7pghfyw9q8e7rjG0wGUxDUuKkp8HqLQQ:https://img.freepik.com/free-photo/fertile-loam-soil-suitable-planting-soil-texture-background_38663-327.jpg%3Fsize%3D626%26ext%3Djpg&usqp=CAU) repeat-x bottom;
+	float:left;
+	border-right:1px solid #000;
+	box-shadow:0px 0px 3px 1px rgba(255,255,255,0.2) inset;
+	padding:7px 8px 9px 8px;
+	color:#ccc;
+}
+/*
 
 /*  The top bar with red text, displays current $  */
 .money {
@@ -16,6 +32,7 @@ body {
   border-color: #000a54;
   height: 30px;
   display: block;
+  
 }
 .money:hover {
   font-size: 30px;
@@ -35,49 +52,137 @@ body {
   color: red;
 }
 
-
-
-
 .clickMe {
-  font-size: 500px;
+  font-size: 100px;
   background-color: #fae100;
+  border-color: #fae100;
   padding: 20px;
   font: impact;
-  margin-left: 200px;
+  left: 200px;
+  top: 250px;
   display: block;
   font-weight: bold;
+  z-index: 2;
+  position: fixed;
+  border-width: 20px;
 }
 .clickMe:hover {
   background-color: red;
   border-color: red;
   font-weight: 900;
 }
-.clickMe:not(:hover) {
-  font-weight: 600;
-}
+
 
 .clickMe:active{
   color: white;
   background-color: black;
   border-color: black;
+  transition-duration: .1s;
+  transform: translate(-20px, -50px) skew(0deg, -10deg);
 }
 
 .clickingStuff {
   color: #0b0030;
   background-color: #e8c715;
-  border-color: #e8c715
+  border-color: #e8c715;
   margin-left: 50px;
+  top: 50px;
+}
+.save {
+  background-color: green;
+  border-color: green;
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+}
+.load {
+  background-color: red;
+  border-color: red;
+  bottom: 5px;
+  right: 60px;
+  position: fixed;
+}
+.alert{
+  background-image: linear-gradient(to right, red , yellow);
+  text-align: center;
 }
 
 
 
+.kidUpgrades {
+  font-weight: bold;
+  background-image:linear-gradient(to right, #6b501d , brown);
+  border-image:linear-gradient(to right, #6b501d , brown);
+  border-width: 3px;
+  border-style: outset;
+  margin: 1px;
+  padding: 2px;
+  color: white;
+  position: relative;
+  width: 30px;
+}
+
+
+
+.lumberjackUpgrades {
+  font-weight: bold;
+  background-image:linear-gradient(to right, gray , brown);
+  border-image:linear-gradient(to right, gray , brown);
+  border-width: 3px;
+  border-style: outset;
+  margin: 1px;
+  padding: 2px;
+  color: white;
+  width: 30px;
+}
+
+.dinosaurUpgrades {
+  font-weight: bold;
+  background-image:linear-gradient(to right, green , brown);
+  border-image:linear-gradient(to right, green , brown);
+  border-width: 3px;
+  border-style: outset;
+  margin: 1px;
+  padding: 2px;
+  color: white;
+  width: 30px;
+}
+
+.soldierUpgrades {
+  font-weight: bold;
+  background-image:linear-gradient(to right, white , gray);
+  border-image:linear-gradient(to right, gold , yellow);
+  border-width: 3px;
+  border-style: outset;
+  margin: 1px;
+  padding: 2px;
+  color: white;
+  width: 30px;
+}
+.hippoUpgrades {
+  font-weight: bold;
+  background-image:linear-gradient(to right, pink , gray);
+  border-image:linear-gradient(to right, gold , yellow);
+  border-width: 3px;
+  border-style: outset;
+  margin: 1px;
+  padding: 2px;
+  color: white;
+  width: 30px;
+}
+
+
+
+
+
+
 .heroName {
-  background-color: gold;
+  text-align: center;
+  background-color: #e0be00;
   box-shadow: 3px 3px 3px #31216e;
   margin: 0px;
   padding-left: 20px;
   padding-top: 10px;
-  opacity: 0.9;
   border-color: #cd7f32;
   border-style: outset;
   border-width: 5px;
@@ -86,20 +191,43 @@ body {
   position: relative;
   display: inline-block;
 }
-.heroCost {
+.heroName:hover {
   background-color: gold;
+}
+.heroName:active {
+  border-style: inset;
+}
+.heroCost {
+  background-color: #e0be00;
   box-shadow: 2px 2px 2px #31216e;
   color: maroon;
   margin: 2px;
   padding-left: 15px;
-  opacity: 0.8;
   border-color: #cd7f32;
   border-style: outset;
   border-width: 3px;
   width: 140px;
 }
-
-
+.heroName:nth-child(1) {
+  visibility: hidden;
+  width: 150px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  opacity: 0;
+  transition: opacity 1s;
+  font-size: 13px;
+  position: absolute;
+  z-index: 3;
+  top: -5px;
+  left: 155%;
+}
+.heroName:hover:nth-child(1) {
+  visibility: visible;
+  opacity: 1;
+}
 .heroNumber {
   background-color: green;
   color: green;
@@ -205,27 +333,44 @@ body {
 .heroCount6 {
   margin: 3px;
 }
-
-
-
-
-/*  For smaller screens  */
-@media (max-width: 800px){
-  .heroCost {
-	width: 90px;
-  }
-  .heroName {
-	width: 120px;
-	padding-left: 10px;
-  }
+.heroNumber7 {
+  background-color: brown;
+  color: brown;
+  margin: 2px;
+  padding-left: 15px;
+  opacity: 0.8;
+  border-color: brown;
+  border-style: outset;
+  border-width: 5px;
+  width: 5px;
+  height: 5px;
+  display: inline-block;
 }
-/*  For bigger screens  8   */
-@media (min-width: 1000px) {
-  .clickMe {
-	margin-left: 400px;
-	font-size: 800px;
-  }
+.heroCount7 {
+  margin: 3px;
 }
+  
+.heroNumber8 {
+  background-image: linear-gradient(to right, red , yellow);
+  color: #4a0000;
+  margin: 2px;
+  padding-left: 15px;
+  opacity: 0.8;
+  border-image: linear-gradient(to right, red , yellow);
+  border-style: outset;
+  border-width: 5px;
+  width: 5px;
+  height: 5px;
+  display: inline-block;
+}
+.heroCount8 {
+  margin: 3px;
+}
+
+
+
+
+
 
 
 
@@ -245,8 +390,6 @@ body {
   opacity: 0;
   transition: opacity 1s;
   font-size: 13px;
- 
-  /* Position the tooltip text - see examples below! */
   position: absolute;
   z-index: 1;
   top: -5px;
@@ -257,4 +400,25 @@ body {
 .heroName:hover .tooltiptext {
   visibility: visible;
   opacity: 1;
+}
+
+
+
+/*  For bigger screens  8   */
+@media (min-width: 1000px) {
+  .clickMe {
+	margin-left: 300px;
+	font-size: 100px;
+	border-width: 30px;
+  }
+}
+/*  For smaller screens  */
+@media (max-width: 800px){
+  .heroCost {
+	width: 90px;
+  }
+  .heroName {
+	width: 120px;
+	padding-left: 10px;
+  }
 }
